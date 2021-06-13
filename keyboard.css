@@ -33,6 +33,31 @@
 	transition: all 50ms ease-out;
 }
 
+@media screen and (max-width: 1024px) {
+ .case{
+ 	height: 15rem;
+ 	width: 45rem;
+ }
+ .key{
+ 	font-size: 7px;
+ 	font-weight: 400;
+ 	margin: 2px;
+ }
+}
+
+@media(max-width:576px) {
+ .case{
+ 	display: none;
+ }
+}
+
+
+@media screen and (max-width:736px) {
+ .case{
+ 	display: none;
+ }
+}
+
 .key:empty::before {
 	content: attr(data-key);
 }
